@@ -1,0 +1,2271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My Love — Maaz Ahmed ❤️</title>
+
+<style>
+
+/* =====================================================
+   GOOGLE FONTS
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap');
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"DM Sans",sans-serif;
+    background:#fff7fa;
+    color:#44212c;
+    overflow-x:hidden;
+}
+
+
+/* =====================================================
+   COMMON
+===================================================== */
+
+section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px 20px;
+}
+
+.container{
+    width:min(1100px,100%);
+    margin:auto;
+    text-align:center;
+}
+
+button{
+    border:0;
+    cursor:pointer;
+    font-family:inherit;
+}
+
+
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
+#musicBtn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+
+    z-index:10000;
+
+    padding:12px 19px;
+
+    background:#e85d86;
+    color:white;
+
+    border-radius:50px;
+
+    font-size:14px;
+    font-weight:600;
+
+    box-shadow:
+        0 8px 25px rgba(232,93,134,.30);
+
+    transition:.3s;
+}
+
+#musicBtn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(232,93,134,.40);
+}
+
+
+/* Hidden YouTube player */
+
+#youtube-player{
+    position:fixed;
+
+    width:1px;
+    height:1px;
+
+    left:-100px;
+    top:-100px;
+
+    opacity:0;
+
+    pointer-events:none;
+}
+
+
+/* =====================================================
+   OPENING SCREEN
+===================================================== */
+
+#intro{
+    position:fixed;
+    inset:0;
+
+    z-index:9999;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255,255,255,.9),
+            transparent 20%
+        ),
+        linear-gradient(
+            135deg,
+            #ffdce8,
+            #fff4f7
+        );
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:1s ease;
+}
+
+.intro-content{
+    text-align:center;
+}
+
+.intro-small{
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#a85d73;
+
+    margin-bottom:25px;
+}
+
+
+/* =====================================================
+   GIFT
+===================================================== */
+
+.gift{
+    width:150px;
+    height:125px;
+
+    margin:30px auto;
+
+    position:relative;
+
+    animation:float 2.5s ease-in-out infinite;
+}
+
+.gift-box{
+    position:absolute;
+
+    bottom:0;
+    left:15px;
+
+    width:120px;
+    height:85px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f16b91,
+            #d83f70
+        );
+
+    border-radius:8px;
+
+    box-shadow:
+        0 15px 35px rgba(170,50,90,.2);
+}
+
+.gift-box:before{
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:0;
+
+    transform:translateX(-50%);
+
+    width:18px;
+    height:100%;
+
+    background:#ffd36d;
+}
+
+.gift-lid{
+    position:absolute;
+
+    left:8px;
+    top:25px;
+
+    width:134px;
+    height:27px;
+
+    background:#ec5983;
+
+    border-radius:7px;
+
+    z-index:2;
+}
+
+.gift-lid:before{
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:18px;
+    height:27px;
+
+    background:#ffd36d;
+}
+
+.ribbon{
+    position:absolute;
+
+    left:50%;
+    top:3px;
+
+    transform:translateX(-50%);
+
+    width:18px;
+    height:25px;
+
+    background:#ffd36d;
+
+    z-index:4;
+}
+
+.bow{
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:5;
+}
+
+.bow:before,
+.bow:after{
+    content:"";
+
+    position:absolute;
+
+    width:35px;
+    height:25px;
+
+    background:#ffd36d;
+
+    border-radius:50% 50% 10% 50%;
+}
+
+.bow:before{
+    right:4px;
+
+    transform:rotate(25deg);
+}
+
+.bow:after{
+    left:4px;
+
+    transform:scaleX(-1) rotate(25deg);
+}
+
+
+/* =====================================================
+   OPEN BUTTON
+===================================================== */
+
+.open-btn{
+    padding:15px 34px;
+
+    background:#e85d86;
+
+    color:white;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    box-shadow:
+        0 10px 25px rgba(232,93,134,.3);
+
+    transition:.3s;
+}
+
+.open-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(232,93,134,.4);
+}
+
+
+/* =====================================================
+   FLOAT
+===================================================== */
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+#hero{
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            #ffe5ee,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            #ffdce8,
+            transparent 30%
+        ),
+
+        #fff8fa;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero-label{
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+
+    color:#a86a7b;
+
+    margin-bottom:18px;
+}
+
+.hero-title{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:
+        clamp(
+            55px,
+            10vw,
+            105px
+        );
+
+    line-height:.95;
+
+    color:#d94470;
+}
+
+.hero-name{
+
+    font-size:
+        clamp(
+            25px,
+            5vw,
+            50px
+        );
+
+    margin-top:25px;
+
+    letter-spacing:5px;
+
+    font-weight:700;
+}
+
+.hero-heart{
+
+    font-size:45px;
+
+    animation:heartbeat 1.5s infinite;
+
+    display:inline-block;
+
+    margin-top:25px;
+}
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    15%{
+        transform:scale(1.15);
+    }
+
+    30%{
+        transform:scale(1);
+    }
+
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+#message{
+    background:#fff;
+}
+
+.message-card{
+
+    background:white;
+
+    max-width:760px;
+
+    padding:55px 35px;
+
+    border-radius:30px;
+
+    box-shadow:
+        0 20px 60px rgba(100,30,55,.08);
+}
+
+.section-title{
+
+    font-family:"Great Vibes",cursive;
+
+    color:#dc527b;
+
+    font-size:58px;
+
+    margin-bottom:20px;
+}
+
+.message-card p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#684451;
+}
+
+.love-line{
+
+    margin-top:30px;
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:38px;
+
+    color:#df4f79;
+}
+
+
+/* =====================================================
+   PHOTO
+===================================================== */
+
+#photo{
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            #ffe1eb,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            #ffdce8,
+            transparent 35%
+        ),
+
+        #fff5f8;
+}
+
+.photo-section{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:80px;
+
+    text-align:left;
+}
+
+.photo-frame{
+
+    flex:0 0 390px;
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:25px;
+
+    box-shadow:
+        0 25px 70px rgba(130,45,75,.16);
+
+    transform:rotate(-3deg);
+
+    transition:.5s ease;
+}
+
+.photo-frame:hover{
+
+    transform:
+        rotate(0deg)
+        scale(1.03);
+}
+
+.photo-frame img{
+
+    display:block;
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:17px;
+}
+
+.photo-caption{
+
+    padding:18px 10px 12px;
+
+    text-align:center;
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:32px;
+
+    color:#dc527b;
+}
+
+.photo-message{
+
+    max-width:500px;
+}
+
+.small-heading{
+
+    color:#c8758d;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:12px;
+
+    margin-bottom:10px;
+}
+
+.photo-message .section-title{
+
+    font-size:58px;
+
+    margin-bottom:20px;
+}
+
+.photo-message p{
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    color:#684451;
+
+    margin-bottom:16px;
+}
+
+.photo-message b{
+
+    color:#dc527b;
+}
+
+.special-line{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    border-left:3px solid #e85d86;
+
+    background:rgba(255,255,255,.65);
+
+    border-radius:0 15px 15px 0;
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:28px;
+
+    line-height:1.4;
+
+    color:#d84e77;
+}
+
+.signature{
+
+    margin-top:20px;
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:30px;
+
+    color:#8e5365;
+}
+
+
+/* =====================================================
+   CAKE
+===================================================== */
+
+#cake-section{
+
+    background:#fff9fb;
+
+    flex-direction:column;
+}
+
+.cake-area{
+
+    margin:20px auto 10px;
+
+    position:relative;
+
+    width:330px;
+
+    height:360px;
+}
+
+.cake{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:280px;
+
+    z-index:3;
+}
+
+.cake-top{
+
+    height:65px;
+
+    background:
+        linear-gradient(
+            #ffe8ee,
+            #ffc7d8
+        );
+
+    border-radius:50%;
+
+    position:relative;
+
+    z-index:3;
+}
+
+.cake-top:after{
+
+    content:"";
+
+    position:absolute;
+
+    left:20px;
+    right:20px;
+
+    bottom:-20px;
+
+    height:50px;
+
+    background:#f7a6bd;
+
+    border-radius:
+        0 0 30px 30px;
+}
+
+.cake-body{
+
+    height:105px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #e998af,
+            #f5b4c6,
+            #dc839e
+        );
+
+    position:relative;
+
+    z-index:2;
+
+    border-radius:
+        0 0 20px 20px;
+
+    margin:0 12px;
+}
+
+.icing{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+    right:0;
+
+    height:30px;
+
+    background:#fff2f5;
+
+    border-radius:
+        0 0 20px 20px;
+}
+
+.icing span{
+
+    position:absolute;
+
+    width:25px;
+    height:35px;
+
+    background:#fff2f5;
+
+    border-radius:
+        0 0 15px 15px;
+}
+
+.icing span:nth-child(1){
+    left:20px;
+}
+
+.icing span:nth-child(2){
+    left:75px;
+}
+
+.icing span:nth-child(3){
+    left:130px;
+}
+
+.icing span:nth-child(4){
+    left:185px;
+}
+
+.cake-bottom{
+
+    height:20px;
+
+    background:#c96b89;
+
+    border-radius:
+        0 0 25px 25px;
+
+    margin:0 5px;
+}
+
+
+/* =====================================================
+   CANDLES
+===================================================== */
+
+.candles{
+
+    position:absolute;
+
+    top:105px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:28px;
+
+    z-index:20;
+
+    align-items:flex-end;
+}
+
+.candle{
+
+    width:14px;
+
+    height:58px;
+
+    border-radius:4px;
+
+    background:
+        repeating-linear-gradient(
+            -45deg,
+            #fff,
+            #fff 8px,
+            #e75d83 8px,
+            #e75d83 15px
+        );
+
+    position:relative;
+
+    box-shadow:
+        0 2px 5px rgba(100,30,55,.15);
+}
+
+.flame{
+
+    position:absolute;
+
+    top:-25px;
+
+    left:50%;
+
+    width:17px;
+
+    height:25px;
+
+    background:#ffb52e;
+
+    border-radius:
+        50% 50% 50% 0;
+
+    transform:
+        translateX(-50%)
+        rotate(45deg);
+
+    transform-origin:center bottom;
+
+    animation:
+        flicker .15s infinite alternate;
+
+    box-shadow:
+        0 0 10px #ffb52e,
+        0 0 20px rgba(255,181,46,.6);
+}
+
+.flame.off{
+    display:none;
+}
+
+@keyframes flicker{
+
+    from{
+
+        transform:
+            translateX(-50%)
+            rotate(45deg)
+            scale(.9);
+    }
+
+    to{
+
+        transform:
+            translateX(-50%)
+            rotate(45deg)
+            scale(1.1);
+    }
+
+}
+
+.cake-plate{
+
+    position:absolute;
+
+    bottom:15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:320px;
+
+    height:25px;
+
+    background:#e7b9c6;
+
+    border-radius:50%;
+
+    z-index:1;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.cake-controls{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+}
+
+.action-btn{
+
+    padding:14px 25px;
+
+    border-radius:50px;
+
+    background:#e85d86;
+
+    color:#fff;
+
+    font-weight:600;
+
+    box-shadow:
+        0 10px 25px rgba(232,93,134,.25);
+
+    transition:.3s;
+}
+
+.action-btn:hover{
+
+    transform:translateY(-3px);
+}
+
+.action-btn.secondary{
+
+    background:white;
+
+    color:#d84e77;
+
+    border:
+        1px solid #f0bfd0;
+}
+
+.wish-message{
+
+    min-height:45px;
+
+    margin-top:25px;
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:38px;
+
+    color:#df4f79;
+}
+
+
+/* =====================================================
+   MEMORIES
+===================================================== */
+
+#memories{
+    background:#fff0f5;
+}
+
+.memories-wrapper{
+
+    width:min(950px,100%);
+}
+
+.carousel{
+
+    display:flex;
+
+    overflow:hidden;
+
+    gap:20px;
+
+    padding:
+        20px 10px 35px;
+
+    scroll-behavior:smooth;
+}
+
+.memory{
+
+    flex:
+        0 0 min(300px,80vw);
+
+    height:390px;
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 15px 45px rgba(100,30,55,.1);
+}
+
+.memory img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:14px;
+}
+
+
+/* =====================================================
+   FINAL
+===================================================== */
+
+#final{
+
+    min-height:80vh;
+
+    background:
+        radial-gradient(
+            circle,
+            #ffd9e5,
+            #fff8fa 65%
+        );
+}
+
+.final-title{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:
+        clamp(
+            60px,
+            10vw,
+            100px
+        );
+
+    color:#d94470;
+}
+
+.final-text{
+
+    font-size:19px;
+
+    margin:20px auto;
+
+    max-width:650px;
+
+    line-height:1.8;
+
+    color:#684451;
+}
+
+.forever{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:48px;
+
+    color:#dc527b;
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.heart{
+
+    position:fixed;
+
+    pointer-events:none;
+
+    animation:
+        rise 2.5s linear forwards;
+
+    font-size:22px;
+
+    z-index:9998;
+}
+
+@keyframes rise{
+
+    0%{
+
+        transform:
+            translateY(0)
+            scale(.5);
+
+        opacity:1;
+    }
+
+    100%{
+
+        transform:
+            translateY(-100vh)
+            translateX(var(--x))
+            scale(1.5);
+
+        opacity:0;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:800px){
+
+    section{
+        padding:50px 15px;
+    }
+
+    .photo-section{
+
+        flex-direction:column;
+
+        gap:45px;
+
+        text-align:center;
+    }
+
+    .photo-frame{
+
+        flex:unset;
+
+        width:min(
+            390px,
+            90vw
+        );
+    }
+
+    .photo-frame img{
+        height:480px;
+    }
+
+    .photo-message{
+        max-width:600px;
+    }
+
+    .photo-message .section-title{
+        font-size:48px;
+    }
+
+    .special-line{
+        text-align:left;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .message-card{
+        padding:40px 22px;
+    }
+
+    .message-card p{
+        font-size:16px;
+    }
+
+    .section-title{
+        font-size:48px;
+    }
+
+    .cake-area{
+
+        transform:scale(.85);
+
+        margin:
+            -20px auto
+            0;
+    }
+
+    .hero-name{
+        letter-spacing:3px;
+    }
+
+    .cake-controls{
+        padding:0 10px;
+    }
+
+    .action-btn{
+
+        padding:12px 18px;
+
+        font-size:14px;
+    }
+
+    #musicBtn{
+
+        right:12px;
+        bottom:12px;
+
+        padding:10px 15px;
+
+        font-size:13px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media(max-width:400px){
+
+    .cake-area{
+
+        transform:scale(.75);
+
+        margin-top:-35px;
+
+        margin-bottom:-25px;
+    }
+
+    .hero-title{
+        font-size:58px;
+    }
+
+    .hero-name{
+
+        font-size:25px;
+
+        letter-spacing:2px;
+    }
+
+}
+
+</style>
+
+
+<!-- =====================================================
+     YOUTUBE API
+===================================================== -->
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HIDDEN YOUTUBE PLAYER
+===================================================== -->
+
+<div id="youtube-player"></div>
+
+
+<!-- =====================================================
+     MUSIC BUTTON
+===================================================== -->
+
+<button id="musicBtn" onclick="toggleMusic()">
+    
+</button>
+
+
+<!-- =====================================================
+     OPENING SCREEN
+===================================================== -->
+
+<div id="intro">
+
+    <div class="intro-content">
+
+        <div class="intro-small">
+            A little surprise for you
+        </div>
+
+
+        <div class="gift">
+
+            <div class="bow"></div>
+
+            <div class="gift-lid"></div>
+
+            <div class="gift-box">
+
+                <div class="ribbon"></div>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="open-btn"
+            onclick="openGift()">
+
+            Open Your Surprise ❤️
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="hero">
+
+    <div class="container hero-content">
+
+        <div class="hero-label">
+            Today is all about you
+        </div>
+
+
+        <h1 class="hero-title">
+            Happy Birthday
+        </h1>
+
+
+        <div class="hero-name">
+            MAAZ AHMED
+        </div>
+
+
+        <div class="hero-heart">
+            ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MESSAGE
+===================================================== -->
+
+<section id="message">
+
+    <div class="container">
+
+        <div class="message-card">
+
+            <h2 class="section-title">
+                To My Love
+            </h2>
+
+
+            <p>
+                Happy Birthday to the person who makes my world
+                brighter just by being in it. ❤️
+            </p>
+
+
+            <br>
+
+
+            <p>
+                You are not just someone I love.
+                You are the reason behind so many of my smiles,
+                the comfort in my difficult days,
+                and one of the most beautiful parts of my life.
+            </p>
+
+
+            <br>
+
+
+            <p>
+                I hope this new year of your life brings you
+                happiness, success, peace and all the beautiful
+                things your heart wishes for.
+            </p>
+
+
+            <div class="love-line">
+                I love you, Maazzu ❤️
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PHOTO + MESSAGE
+===================================================== -->
+
+<section id="photo">
+
+    <div class="container photo-section">
+
+
+        <!-- PHOTO -->
+
+        <div class="photo-frame">
+
+            <img
+                src="maaz-photo5.jpeg"
+                alt="Maaz Ahmed"
+            >
+
+            <div class="photo-caption">
+                My Man ❤️
+            </div>
+
+        </div>
+
+
+        <!-- MESSAGE -->
+
+        <div class="photo-message">
+
+            <div class="small-heading">
+                A little something about you...
+            </div>
+
+
+            <h2 class="section-title">
+                Why You Are Special
+            </h2>
+
+
+            <p>
+                If someone asked me what my favorite thing
+                in this world is, I wouldn't need to think twice.
+                It's <b>you.</b> ❤️
+            </p>
+
+
+            <p>
+                There is something about you that makes ordinary
+                moments feel special. Your smile, your presence,
+                your little ways of making me happy...
+                somehow, they all mean more than you know.
+            </p>
+
+
+            <p>
+                I don't just love the big moments with you.
+                I love the little ones too —
+                every conversation, every laugh,
+                every memory and every moment that belongs to us.
+            </p>
+
+
+            <div class="special-line">
+                You are my favorite person,
+                my favorite memory,
+                and my favorite part of every day. ❤️
+            </div>
+
+
+            <div class="signature">
+                — Always yours, ❤️
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CAKE
+===================================================== -->
+
+<section id="cake-section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Make a Wish 🎂
+        </h2>
+
+
+        <p
+            style="
+                margin-bottom:15px;
+                color:#805564;
+            ">
+
+            Close your eyes, make a wish,
+            and blow the candles. ❤️
+
+        </p>
+
+
+        <div class="cake-area">
+
+
+            <!-- CANDLES -->
+
+            <div class="candles">
+
+                <div class="candle">
+
+                    <div class="flame"></div>
+
+                </div>
+
+
+                <div class="candle">
+
+                    <div class="flame"></div>
+
+                </div>
+
+
+                <div class="candle">
+
+                    <div class="flame"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAKE -->
+
+            <div class="cake">
+
+                <div class="cake-top">
+
+                    <div class="icing">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cake-body"></div>
+
+
+                <div class="cake-bottom"></div>
+
+            </div>
+
+
+            <!-- PLATE -->
+
+            <div class="cake-plate"></div>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="cake-controls">
+
+            <button
+                class="action-btn"
+                onclick="blowCandles()">
+
+                🕯️ Blow Candles
+
+            </button>
+
+
+            <button
+                class="action-btn secondary"
+                onclick="makeWish()">
+
+                ✨ Make a Wish
+
+            </button>
+
+
+            <button
+                class="action-btn secondary"
+                onclick="sendLove()">
+
+                ❤️ Send Love
+
+            </button>
+
+        </div>
+
+
+        <div
+            id="wishMessage"
+            class="wish-message">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MEMORIES
+===================================================== -->
+
+<section id="memories">
+
+    <div class="container memories-wrapper">
+
+        <h2 class="section-title">
+            Memories
+        </h2>
+
+
+        <p
+            style="
+                margin-bottom:20px;
+                color:#805564;
+            ">
+
+            Every picture holds a little piece
+            of happiness. ❤️
+
+        </p>
+
+
+        <div class="carousel" id="memoryCarousel">
+
+
+            <div class="memory">
+
+                <img
+                    src="maaz-photo1.jpeg"
+                    alt="Memory 1"
+                >
+
+            </div>
+
+
+            <div class="memory">
+
+                <img
+                    src="maaz-photo3.jpeg"
+                    alt="Memory 2"
+                >
+
+            </div>
+
+
+            <div class="memory">
+
+                <img
+                    src="maaz-photo5.jpeg"
+                    alt="Memory 3"
+                >
+
+            </div>
+
+
+            <div class="memory">
+
+                <img
+                    src="maaz-photo6.jpeg"
+                    alt="Memory 4"
+                >
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL
+===================================================== -->
+
+<section id="final">
+
+    <div class="container">
+
+
+        <div class="final-title">
+            Happy Birthday, Maazzu ❤️
+        </div>
+
+
+        <p class="final-text">
+
+            Happy birthday, my love. ❤️
+            You are one of the most beautiful parts
+            of my life, and I hope today reminds you
+            just how deeply you are loved.
+
+            May this new year of your life bring you
+            peace, endless smiles, success in everything
+            you dream of, and moments that stay in your
+            heart forever.
+
+            Keep being the wonderful person you are.
+
+            No matter how many birthdays come and go,
+            I will always be grateful for the memories,
+            the laughter, and the little moments that
+            make you special to me.
+
+            Happy Birthday, Maaz,
+            my love, my favourite person,
+            and someone I will always wish
+            the very best for. 🎂✨
+
+        </p>
+
+
+        <div class="forever">
+            With love, always & forever ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   YOUTUBE MUSIC
+===================================================== */
+
+/*
+   IMPORTANT:
+   Replace YOUR_YOUTUBE_VIDEO_ID with your song's ID.
+
+   Example:
+
+   https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+   ID = dQw4w9WgXcQ
+*/
+
+
+let player;
+
+let musicPlaying = false;
+
+
+/* =====================================================
+   YOUTUBE API READY
+===================================================== */
+
+function onYouTubeIframeAPIReady(){
+
+    player = new YT.Player(
+        "youtube-player",
+        {
+
+            height:"1",
+
+            width:"1",
+
+            videoId:"WWIfHemqSEA",
+
+            playerVars:{
+
+                autoplay:0,
+
+                controls:0,
+
+                loop:1,
+
+                playlist:"WWIfHemqSEA",
+
+                playsinline:1,
+
+                rel:0
+
+            },
+
+            events:{
+
+                onReady:function(){
+
+                    console.log(
+                        "YouTube music is ready."
+                    );
+
+                }
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   START MUSIC
+===================================================== */
+
+function startMusic(){
+
+    if(!player){
+        return;
+    }
+
+    try{
+
+        player.unMute();
+
+        player.setVolume(70);
+
+        player.playVideo();
+
+        musicPlaying = true;
+
+        document
+            .getElementById("musicBtn")
+            .innerHTML =
+            "🎵 Music On";
+
+    }
+
+    catch(error){
+
+        console.log(
+            "Music could not start:",
+            error
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   TOGGLE MUSIC
+===================================================== */
+
+function toggleMusic(){
+
+    if(!player){
+        return;
+    }
+
+
+    if(musicPlaying){
+
+        player.pauseVideo();
+
+        musicPlaying = false;
+
+        document
+            .getElementById("musicBtn")
+            .innerHTML =
+            "🔇 Music Off";
+
+    }
+
+    else{
+
+        player.unMute();
+
+        player.playVideo();
+
+        musicPlaying = true;
+
+        document
+            .getElementById("musicBtn")
+            .innerHTML =
+            "🎵 Music On";
+
+    }
+
+}
+
+
+/* =====================================================
+   OPEN GIFT
+===================================================== */
+
+function openGift(){
+
+    const intro =
+        document.getElementById("intro");
+
+
+    /*
+       START MUSIC HERE.
+
+       Because the user has clicked the button,
+       the browser allows the audio to start.
+    */
+
+    startMusic();
+
+
+    /* Hide intro */
+
+    intro.style.opacity = "0";
+
+    intro.style.pointerEvents =
+        "none";
+
+
+    setTimeout(function(){
+
+        intro.style.display =
+            "none";
+
+
+        document
+            .getElementById("hero")
+            .scrollIntoView({
+
+                behavior:"smooth"
+
+            });
+
+
+    },1000);
+
+
+    createHearts(15);
+
+}
+
+
+/* =====================================================
+   BLOW CANDLES
+===================================================== */
+
+function blowCandles(){
+
+    const flames =
+        document.querySelectorAll(".flame");
+
+
+    flames.forEach(function(
+        flame,
+        index
+    ){
+
+        setTimeout(function(){
+
+            flame.classList.add("off");
+
+        }, index * 250);
+
+    });
+
+
+    setTimeout(function(){
+
+        document
+            .getElementById("wishMessage")
+            .innerHTML =
+            "Wish made ❤️";
+
+
+        createHearts(25);
+
+    },1000);
+
+}
+
+
+/* =====================================================
+   MAKE A WISH
+===================================================== */
+
+function makeWish(){
+
+    document
+        .getElementById("wishMessage")
+        .innerHTML =
+        "May every wish in your heart come true ✨❤️";
+
+
+    createHearts(20);
+
+}
+
+
+/* =====================================================
+   SEND LOVE
+===================================================== */
+
+function sendLove(){
+
+    document
+        .getElementById("wishMessage")
+        .innerHTML =
+        "Sending you all my love ❤️";
+
+
+    createHearts(40);
+
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+function createHearts(amount){
+
+    for(
+        let i = 0;
+        i < amount;
+        i++
+    ){
+
+        setTimeout(function(){
+
+            const heart =
+                document.createElement("div");
+
+
+            heart.className =
+                "heart";
+
+
+            const hearts = [
+
+                "❤️",
+                "💕",
+                "💗",
+                "💖",
+                "💘"
+
+            ];
+
+
+            heart.innerHTML =
+                hearts[
+                    Math.floor(
+                        Math.random() *
+                        hearts.length
+                    )
+                ];
+
+
+            heart.style.left =
+                Math.random() *
+                100 +
+                "vw";
+
+
+            heart.style.bottom =
+                "-30px";
+
+
+            heart.style.setProperty(
+                "--x",
+
+                (
+                    Math.random() *
+                    200 -
+                    100
+                ) +
+                "px"
+            );
+
+
+            heart.style.animationDuration =
+                (
+                    2 +
+                    Math.random() * 2
+                ) +
+                "s";
+
+
+            document.body.appendChild(
+                heart
+            );
+
+
+            setTimeout(function(){
+
+                heart.remove();
+
+            },4500);
+
+
+        }, i * 60);
+
+    }
+
+}
+
+
+/* =====================================================
+   AUTOMATIC MEMORIES CAROUSEL
+===================================================== */
+
+const carousel =
+    document.getElementById(
+        "memoryCarousel"
+    );
+
+let memoryScroll = 0;
+
+
+function autoScrollMemories(){
+
+    if(!carousel){
+        return;
+    }
+
+
+    const firstCard =
+        carousel.querySelector(
+            ".memory"
+        );
+
+
+    if(!firstCard){
+        return;
+    }
+
+
+    const cardWidth =
+        firstCard.offsetWidth + 20;
+
+
+    memoryScroll += cardWidth;
+
+
+    if(
+        memoryScroll >=
+        carousel.scrollWidth -
+        carousel.clientWidth
+    ){
+
+        memoryScroll = 0;
+
+        carousel.scrollTo({
+
+            left:0,
+
+            behavior:"smooth"
+
+        });
+
+    }
+
+    else{
+
+        carousel.scrollTo({
+
+            left:memoryScroll,
+
+            behavior:"smooth"
+
+        });
+
+    }
+
+}
+
+
+/*
+   Change 3500 to control speed.
+
+   3500 = 3.5 seconds
+*/
+
+setInterval(
+    autoScrollMemories,
+    3500
+);
+
+
+/* =====================================================
+   HEARTS WHILE SCROLLING
+===================================================== */
+
+let heartTimer;
+
+
+window.addEventListener(
+    "scroll",
+    function(){
+
+        clearTimeout(
+            heartTimer
+        );
+
+
+        heartTimer =
+            setTimeout(function(){
+
+                if(
+                    Math.random() > .65
+                ){
+
+                    createHearts(3);
+
+                }
+
+            },300);
+
+    }
+);
+
+
+</script>
+
+
+</body>
+</html>
+
